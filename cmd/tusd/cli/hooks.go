@@ -144,6 +144,7 @@ func invokeHttpHook(name string, typ HookType, info tusd.FileInfo, captureOutput
 	}
 
 	req.Header.Set("Hook-Name", name)
+	req.Header.Set("API-Key", os.Getenv("TUS_API_KEY"))
 	req.Header.Set("Content-Type", "application/json")
 
 	// Use linear backoff strategy with the user defined values.

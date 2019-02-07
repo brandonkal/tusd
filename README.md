@@ -111,7 +111,7 @@ Usage of tusd:
   -hooks-dir string
     	Directory to search for available hooks scripts
   -hooks-http string
-    	An HTTP endpoint to which hook events will be sent to
+    	An HTTP endpoint to which hook events will be sent to (TUS_API_KEY environment variable can be set to pass an API-Key header)
   -hooks-http-backoff int
     	Number of seconds to wait before retrying each retry (default 1)
   -hooks-http-retry int
